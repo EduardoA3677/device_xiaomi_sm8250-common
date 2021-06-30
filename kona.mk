@@ -419,7 +419,9 @@ PRODUCT_PACKAGES += \
     libcodec2-hidl-client-defaults@1.2 \
     libcodec2-hidl-defaults@1.2 \
     libcodec2_vndk.vendor  \
-    libdrm.vendor
+    libdrm.vendor \
+    libcodec2_hidl@1.0.vendor:32 \
+    libcodec2_vndk.vendor:32
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
