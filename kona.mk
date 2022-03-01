@@ -259,7 +259,13 @@ PRODUCT_PACKAGES += \
     libdng_sdk.vendor \
     libgui_vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor \
-    vendor.qti.hardware.camera.device@1.0.vendor
+    vendor.qti.hardware.camera.device@1.0.vendor \
+    android.hardware.camera.device@3.7 \
+    android.hardware.camera.device@3.7.vendor \
+    android.hardware.camera.provider@2.7 \
+    android.hardware.camera.provider@2.7.vendor \
+    android.hardware.camera.metadata@3.6 \
+    android.hardware.camera.metadata@3.6.vendor
 
 PRODUCT_PACKAGES += \
     libstdc++.vendor
