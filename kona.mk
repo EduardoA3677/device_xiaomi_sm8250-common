@@ -160,8 +160,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0.vendor \
     android.hardware.bluetooth.audio@2.1 \
     android.hardware.bluetooth.audio@2.1-impl \
-    android.hardware.soundtrigger@2.3-impl \
-    sound_trigger.primary.kona
     android.hardware.bluetooth.audio@2.1.vendor \
     android.hardware.soundtrigger@2.1-impl \
     android.hardware.soundtrigger@2.2-impl \
@@ -315,7 +313,6 @@ PRODUCT_PACKAGES += \
     libvulkan \
     memtrack.kona \
     vendor.display.config@1.5 \
-    vendor.display.config@1.11.vendor \
     vendor.display.config@1.9 \
     vendor.display.config@1.11 \
     vendor.display.config@1.14 \
@@ -496,9 +493,7 @@ PRODUCT_PACKAGES += \
     libcodec2-hidl-client-defaults@1.2 \
     libcodec2-hidl-defaults@1.2 \
     libcodec2_vndk.vendor  \
-    libdrm.vendor \
-    libcodec2_hidl@1.0.vendor:32 \
-    libcodec2_vndk.vendor:32
+    libdrm.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
@@ -534,19 +529,23 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.2.vendor \
     android.hardware.nfc_snxxx@1.2-service \
     android.hardware.secure_element@1.2.vendor \
     com.android.nfc_extras \
     libchrome.vendor \
     NfcNci \
     SecureElement \
-    Tag
+    Tag \
+    android.hardware.secure_element@1.2.vendor
 
 PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/libnfc-nci.conf
 
 # OMX
 PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0-impl \
+    android.hardware.media.omx@1.0-service \
     libOmxAacEnc \
     libOmxAmrEnc \
     libOmxCore \
@@ -555,7 +554,8 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
-    libstagefrighthw
+    libstagefrighthw \
+    libstagefright_omx.vendor
 
 # Perf
 PRODUCT_PACKAGES += \
@@ -567,7 +567,8 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.xiaomi-libperfmgr
+    android.hardware.power-service.xiaomi-libperfmgr \
+    android.hardware.power.stats@1.0-service.mock
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
