@@ -173,6 +173,7 @@ vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.kona.so
 vendor/lib64/libhdr_tm.so|4be3cfff1ef40cbc6ad329b79c60881263aa6723
 
 # Display (SDM) - from LA.UM.9.12.r1-13300-SMxx50.QSSI12.0
+vendor/bin/hw/vendor.qti.hardware.display.composer-service
 vendor/lib64/libdisplayqos.so|56cfe5471e5c282ac83a31e5b155342ade8c08d0
 vendor/lib64/libdisplayskuutils.so|3ddb2ffe55aa9aef686cf3be00ae5e0d1d8f9d93
 vendor/lib64/libqseed3.so|c9fb729cf48278d0c87d27c0af17ae3a8ccb1bf7
